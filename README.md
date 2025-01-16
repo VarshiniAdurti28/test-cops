@@ -155,11 +155,9 @@ func main() {
 Rust introduces a unique approach to memory management through its ownership model, which not only ensures memory safety but also significantly influences concurrency and performance. By enforcing strict ownership rules, Rust eliminates data races at compile time, enabling safe and efficient multi-threading. For example, the ownership system allows only one mutable reference or multiple immutable references to a value, ensuring consistent access patterns without the need for locks, thereby boosting performance in concurrent scenarios.
 
 #### Key Concepts:
-
-- **Ownership:** Each value in Rust has a single owner.
-- **Borrowing:** Allows references to data without taking ownership.
-- **Lifetime:** The scope during which a reference is valid.
-
+- Each value in Rust has an owner.
+- There can only be one owner at a time.
+- When the owner goes out of scope, the value will be dropped.
 #### Example: Ownership and Borrowing
 
 ```rust
@@ -190,7 +188,7 @@ fn main() {
 }
 ```
 
-Note:We don't need to call drop() function in rust by ourselves.It is automaticlally handeled by compiler.
+Note:We don't need to call drop() function in rust by ourselves.It is automaticlally handeled by compiler.Whenver a function goes out of scope,this function is called.
 
 #### Pros:
 
@@ -202,7 +200,6 @@ Note:We don't need to call drop() function in rust by ourselves.It is automaticl
 - Steeper learning curve for beginners.
 - Can be verbose in certain cases.
 
----
 
 Memory management is an essential skill for developers. By understanding the nuances of stack vs. heap memory, manual vs. automatic approaches, and unique models like Rust’s ownership, programmers can build efficient, robust, and scalable applications. As systems grow in complexity, mastering memory management becomes ever more critical.
 
