@@ -1,6 +1,8 @@
 # Mastering Memory Management
 
-Memory management is a foundational aspect of computer science and software development. It ensures the optimal use of memory resources, improves system performance, and reduces the risk of issues such as memory leaks or fragmentation. This blog delves deep into the intricacies of memory management, highlighting its importance, key benefits, challenges, and how it is handled through techniques like stack and heap memory allocation.
+Memory management is a foundational aspect of computer science and software development, ensuring the optimal use of memory resources. For example, in mobile apps, efficient memory management helps conserve battery life and maintain smooth performance, even when running multiple apps simultaneously. Similarly, web browsers rely on effective memory management to avoid slow loading times or crashes when multiple tabs are open. It also plays a critical role in reducing the risk of issues such as memory leaks or fragmentation, which can cause performance degradation or system crashes. A great example of this is how embedded systems in cars rely on memory management to ensure the timely and safe operation of critical components like airbags and braking systems.
+
+This blog delves deep into the intricacies of memory management, highlighting its importance, key benefits, and challenges. We will explore how memory is managed through techniques like stack and heap memory allocation, drawing parallels to real-world scenarios. Whether it's mobile apps, web browsers, or embedded systems, understanding memory management is essential for building efficient, robust, and scalable applications.
 
 ## What is Memory Management?
 
@@ -71,11 +73,11 @@ In C/C++, functions like `malloc`, `calloc`, and `free` are used for memory mana
 
 int main() {
     int *arr;
-    //n:strored in stack
+    //n is stored in stack
     int n = 5;
 
     // Allocate memory for an array of integers
-    //arr:stored in heap
+    //arr is stored in heap
     arr = (int *)malloc(n * sizeof(int));
 
     // Check if memory allocation was successful
@@ -188,7 +190,7 @@ fn main() {
 }
 ```
 
-Note:We don't need to call drop() function in rust by ourselves.It is automaticlally handeled by compiler.Whenver a function goes out of scope,this function is called.
+Note:We don't need to call drop() function in rust by ourselves.It is automaticlally handled by compiler.Whenver a function goes out of scope,this function is called.
 
 #### Pros:
 
