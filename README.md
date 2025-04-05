@@ -1,4 +1,5 @@
 # Mastering Memory Management
+## this is a forked repo
 
 Memory management is a foundational aspect of computer science and software development, ensuring the optimal use of memory resources. For example, in mobile apps, efficient memory management helps conserve battery life and maintain smooth performance, even when running multiple apps simultaneously. Similarly, web browsers rely on effective memory management to avoid slow loading times or crashes when multiple tabs are open. It also plays a critical role in reducing the risk of issues such as memory leaks or fragmentation, which can cause performance degradation or system crashes. A great example of this is how embedded systems in cars rely on memory management to ensure the timely and safe operation of critical components like airbags and braking systems.
 
